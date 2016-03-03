@@ -19,10 +19,10 @@ public class TabPageAdapter extends FragmentPagerAdapter {
     private static String TAG = "checkVariable";
     private String tabTitles[] = new String[]{"Map", "Shops list", "Events"};
     private Context context;
-
-    public TabPageAdapter(FragmentManager fm, Context context ) {
+                                            //,Context context
+    public TabPageAdapter(FragmentManager fm ) {
         super(fm);
-        this.context = context;
+        //this.context = context;
 
     }
     @Override
