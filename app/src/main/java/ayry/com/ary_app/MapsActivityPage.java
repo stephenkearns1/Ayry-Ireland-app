@@ -39,8 +39,25 @@ public class MapsActivityPage extends FragmentActivity implements OnMapReadyCall
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(53.341369, -6.263070);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Dada Moroccan Restaurant " + "n'kpnknknk;mn" ));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng site  = new LatLng(53.350894, -6.262975);
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(site, 16));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(site));
+        mMap.addMarker(new MarkerOptions()
+                .title("Halal Supermarket")
+                .snippet("Most popular halal shop in dublin city centre located near Historic Moore street.")
+                .position(site));
+
+        LatLng site1 = new LatLng(53.341087, -6.262124);
+
+
+        mMap.addMarker(new MarkerOptions()
+                .title("Halal Resturant MOMO")
+                .snippet("The most popular hipster Halal restuant")
+                .snippet(" ever to grace dublin specialising in halal meat")
+                .position(site1));
+
+
     }
 }
