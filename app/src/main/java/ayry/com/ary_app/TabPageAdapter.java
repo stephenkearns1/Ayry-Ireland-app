@@ -15,9 +15,9 @@ public class TabPageAdapter extends FragmentPagerAdapter {
            Code referance: http://guides.codepath.com/android/Google-Play-Style-Tabs-using-TabLayout
 
       */
-    final int PAGE_COUNT = 3;
+    final int PAGE_COUNT = 2;
     private static String TAG = "checkVariable";
-    private String tabTitles[] = new String[]{"Map", "Shops list", "Events"};
+    private String tabTitles[] = new String[]{ "Shop List", "Newsfeed"};
     private Context context;
                                             //,Context context
     public TabPageAdapter(FragmentManager fm ) {
@@ -40,12 +40,12 @@ public class TabPageAdapter extends FragmentPagerAdapter {
         switch (position){
 
             //returns the fragment to display for that page w
+           /* case 0:
+                return Tab_fragment1.newInstance(0,"First Fragment Map"); */
             case 0:
-                return Tab_fragment1.newInstance(0,"First Fragment Map");
+                return Tab_Fragment1.newInstance(1, "Second fragment shoplist");
             case 1:
-                return Tab_Fragment2.newInstance(1,"Second fragment shoplist");
-            case 2:
-                return Tab_Fragment3.newInstance(2,"Third Fragment ");
+                return Tab_Fragment2.newInstance(2, "Third Fragment ");
             default:
                 Log.i(TAG, "Using default case which is NULL" + position); //example of how to log
                 return null;
