@@ -57,6 +57,39 @@ public class MapsActivityPage extends FragmentActivity implements OnMapReadyCall
                 .snippet("The most popular hipster Halal restuant")
                 .snippet(" ever to grace dublin specialising in halal meat")
                 .position(site1));
+        LatLng site2 = new LatLng(53.383635, -6.398015);
+
+
+        mMap.addMarker(new MarkerOptions()
+                .title("Al-Mustafa Islamic Centre")
+                .snippet("By the Grace of Almighty Allah,is one of the mainstream centres in ireland")
+                .position(site2));
+
+
+        LatLng site3 = new LatLng(53.330525, -6.264188);
+
+
+        mMap.addMarker(new MarkerOptions()
+                .title("Rotana Cafe Lebanese Restaurant ")
+                .snippet("Rotana offers a wonderful Lebanese eating experience at an excellent price point")
+                .position(site3));
+
+        LatLng site4 = new LatLng(53.452167, -6.154823);
+
+
+        mMap.addMarker(new MarkerOptions()
+                .title("Kajjal")
+                .snippet("Kajjal offers a diverse pakistani and indian eating experience")
+                .position(site4));
+
+
+        LatLng site5 = new LatLng(53.333732, -6.245748);
+
+
+        mMap.addMarker(new MarkerOptions()
+                .title("Keshkl")
+                .snippet("Keshkl offers a diverse  Egyptian, Greek and Turkish eating experience")
+                .position(site5));
 
 
     }
