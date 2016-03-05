@@ -43,7 +43,7 @@ public class TabPageAdapter extends FragmentPagerAdapter {
            /* case 0:
                 return Tab_fragment1.newInstance(0,"First Fragment Map"); */
             case 0:
-                return Tab_Fragment1.newInstance(1, "Second fragment shoplist");
+                return ShopsList_Fragment.newInstance(1, "Second fragment shoplist");
             case 1:
                 return Tab_Fragment2.newInstance(2, "Third Fragment ");
             default:

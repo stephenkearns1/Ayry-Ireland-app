@@ -12,7 +12,7 @@ import android.view.ViewGroup;
  * Created by Stephen J Kearns on 15/02/2016.
  */
 
-public class Tab_Fragment1 extends Fragment {
+public class ShopsList_Fragment extends Fragment {
 
      /*
           Code referance: http://guides.codepath.com/android/Google-Play-Style-Tabs-using-TabLayout
@@ -29,15 +29,15 @@ public class Tab_Fragment1 extends Fragment {
     }
 
     // new Instance constructor for creating fragment with arguments
-    public static Tab_Fragment1 newInstance(int page, String title){
+    public static ShopsList_Fragment newInstance(int page, String title){
         //create new istance of the Tab_fragment1 class
-        Tab_Fragment1 tab_fragment1 = new Tab_Fragment1();
+        ShopsList_Fragment shopsList_fragment = new ShopsList_Fragment();
         Bundle args = new Bundle();
         args.putInt("someInt", 1);
         args.putString("someTitle", title);
-        tab_fragment1.setArguments(args);
+        shopsList_fragment.setArguments(args);
 
-        return tab_fragment1;
+        return shopsList_fragment;
     }
 
 
