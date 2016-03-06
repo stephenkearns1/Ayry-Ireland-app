@@ -94,6 +94,11 @@ public class MapsActivityPage extends FragmentActivity implements OnMapReadyCall
                 .title("Keshkl")
                 .snippet("Keshkl offers a diverse  Egyptian, Greek and Turkish eating experience")
                 .position(site5));
+        LatLng site6 = new LatLng(53.333732, -6.245748);
+        mMap.addMarker(new MarkerOptions()
+                .title("Islamic Cultural Centre of Ireland")
+                .snippet("Keshkl offers a diverse  Egyptian, Greek and Turkish eating experience")
+                .position(site6));
 
 
     }
