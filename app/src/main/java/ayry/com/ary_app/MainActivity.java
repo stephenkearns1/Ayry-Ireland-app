@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Feature Coming Soon", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.nav_camera) {
             // calls  the map activity, reason for using seperate activity is due to maps do not work with sliding activities
-            Intent intent = new Intent(this, Main2Activity.class);
+            Intent intent = new Intent(this, MapsActivityPage.class);
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
 
