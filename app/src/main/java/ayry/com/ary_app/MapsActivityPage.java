@@ -42,7 +42,7 @@ public class MapsActivityPage extends FragmentActivity implements OnMapReadyCall
         LatLng site  = new LatLng(53.350894, -6.262975);
 
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(site, 16));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(site, 10));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(site));
         mMap.addMarker(new MarkerOptions()
                 .title("Halal Supermarket")
