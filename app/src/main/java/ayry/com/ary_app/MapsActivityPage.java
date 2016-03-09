@@ -94,11 +94,17 @@ public class MapsActivityPage extends FragmentActivity implements OnMapReadyCall
                 .title("Keshkl")
                 .snippet("Keshkl offers a diverse  Egyptian, Greek and Turkish eating experience")
                 .position(site5));
-        LatLng site6 = new LatLng(53.333732, -6.245748);
+        LatLng site6 = new LatLng(53.304499, -6.233727);
         mMap.addMarker(new MarkerOptions()
                 .title("Islamic Cultural Centre of Ireland")
-                .snippet("Keshkl offers a diverse  Egyptian, Greek and Turkish eating experience")
+                .snippet("The Islamic Cultural Centre of Ireland is an Islamic complex, including a mosque, in Clonskeagh, Dublin, Ireland. It is funded by the al-Maktoum Foundation of Dubai and has a Sunni orientation.")
                 .position(site6));
+
+        LatLng site7 = new LatLng(53.267348, -6.135700);
+        mMap.addMarker(new MarkerOptions()
+                .title("Masala")
+                .snippet("Masala is a place for simplicity. Good food and good service. Masala is the Hindi name of the Indian spices, and we’re good at using them in right amounts at right places. We’re Dubliners with Indian at heart and make Indian food for the lovely people of Dublin.\n")
+                .position(site7));
 
 
     }
