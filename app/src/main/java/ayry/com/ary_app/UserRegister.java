@@ -32,7 +32,13 @@ public class UserRegister  extends AppCompatActivity implements View.OnClickList
         switch(v.getId()){
             case R.id.RegBtn:
 
-                //do on click listner here
+                //retrive data entred by user
+                String username = userNameET.getText().toString();
+                String name = etName.getText().toString();
+                String email = userEmailET.getText().toString();
+                String password = userPasswordET.getText().toString();
+
+                User RegUser = new User(username,name,email,password);
 
                 break;
 
@@ -43,4 +49,13 @@ public class UserRegister  extends AppCompatActivity implements View.OnClickList
         }
     }
 
+    private void regUser(User user){
+        DB_Sever_Request  DB_Sever_Request = new  DB_Sever_Request(this);
+        DB_Sever_Request.SaveUserDataInBackground(user, new GetUserCallBack() {
+            @Override
+            public void finished(User returnedUser) {
+                Intent intent = new Intent(UserRegister.this,UserLogin.class);
+            }
+        });
+    }
 }

@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     FragmentPagerAdapter FragmentPagerAdapter;
     DrawerLayout mDrawerLayot;
+    DetailsUserStoreLocal userLocaldetails;
 
 
     @Override
@@ -62,8 +63,38 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
 
+        userLocaldetails = new DetailsUserStoreLocal(this);
+
+
 
     }
+
+
+    protected void onStart(){
+        super.onStart();
+
+        if(authenticate()==true){
+            //display logged in or start main activity
+        }else{
+            //starts loginIn activity
+        }
+
+    }
+
+    private boolean authenticate(){
+      return  userLocaldetails.getLoggedIn();
+    }
+
+
+
+    private void displayUserDetails(){
+        User user = userLocaldetails.UserLoggedIn();
+        //set drawer info with the info of the logged in user
+    }
+
+
+
+
 /*
     @Override
     public void onBackPressed() {
